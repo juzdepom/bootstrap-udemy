@@ -6,32 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
-    <title>Bootstrap Udemy</title>
-    <style>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 
-      .jumbotron {
-        background-color: rgba(240,240,240,0.8);
-      }
-      /*this is what will allow the parallax effect*/
-      .section {
-        min-height: 700px;
-        overflow: hidden;
-        position: relative;
-        padding:80px 10px 0px;
-        background-size: cover;
-      }
-      .section:nth-child(even){
-        background: url(http://eskipaper.com/images/dark-enchanted-forest-1.jpg) no-repeat center center fixed;
-      }
-      #home {
-        background: url(https://i.pinimg.com/originals/ea/f3/aa/eaf3aabfccebfb5f4599e33ca439b959.jpg) no-repeat center center fixed;
-      }
-      #home .container {
-        color: white;
-        background-color: rgba(240,240,240,0.3);
-        padding: 30px;
-      }
-    </style>
+    <title>Bootstrap Udemy</title>
+    <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
   </head>
 
   <body>
@@ -48,9 +30,7 @@
           <ul class="navbar-nav ml-auto">
             <li><a href="#home" class="nav-link">Home</a></li>
             <li><a href="#about" class="nav-link">About</a></li>
-            <li><a href="#products" class="nav-link">Products</a></li>
-            <li><a href="#contact" class="nav-link">Contact</a></li>
-          </ul>
+            <li><a href="#products" class="nav-link">Products</a></li>          </ul>
         </div>
       </div>
     </nav>
@@ -61,6 +41,10 @@
           <h1>Bootstrap 4 Products</h1>
           <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis.</p>
           <p><a href="#about" class="btn btn-primary">Learn more about us!</a></p>
+          <ul class="list-group">
+            <li class="list-group-item">Diamonds</li>
+            <li class="list-group-item">Gold</li>
+          </ul>
         </div>
       </div>
     </header>
@@ -77,13 +61,72 @@
                 src="http://cdn.playbuzz.com/cdn/0af388b4-f2d2-4ef5-81e3-7d6cc8c4a0a9/61da4161-7467-48ff-8090-6fc9657ae4c1_560_420.jpg"/>
           </div>
         </div>
+        <p style="margin-top:15px">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,</p>
       </div>
     </section>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+    <section class="section" id="about">
+      <div class="container rounded">
+        <div class="row">
+          <div class="col">
+            <img class="img-fluid"
+                src="https://goblin.education/wp-content/uploads/2015/11/GOBLIN-Twitter-Copy.png"/>
+          </div>
+          <div class="col-2">
+
+          </div>
+          <div class="col-6" >
+            <h2>My name is Jarvis.</h2>
+            <p>I sell rare pieces and trinkets. I find them during my wanderings through the forest.
+              I love to wander. Everywhere I go, I bring a big burlap bag to carry all the interesting artifacts I find.
+              Below are some examples of rare items I've found. Feel free to take look.</p>
+          </div>
+        </div>
+        <br>
+        <div class="row">
+          <div class="col-4" >
+            <img class="small-square img-fluid" src="https://goldprice.org/sites/default/files/best-gold-price.png">
+          </div>
+          <div class="col-4" >
+            <img class="small-square img-fluid" src="https://assets.ritani.com/assets/education_channel/diamonds/diamond-anatomy-27680883da28fb94afdbd63f43b03f48.png">
+          </div>
+          <div class="col-4">
+            <img class="small-square img-fluid"src="https://www.gempundit.com/skin/frontend/ultimo/default/img/bg/emerald-banner1.png" alt="">
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section" id="products">
+      <div class="container rounded">
+        <div class="row">
+          <div class="col">
+            <div class="card">
+              <div class="card-header">Card Header</div>
+              <div class="card-body">
+                <div class="card-title">Card Title</div>
+                <div class="card-text">Card Text</div>
+              </div>
+              <div class="card-footer">
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+        $('.navbar li a').on('click', function (event) {
+            console.log('clicked')
+            event.preventDefault();
+            var target = $(this).attr('href');
+            var offsetTop = $(target).offset().top;
+            $('html, body').animate({
+                scrollTop: offsetTop
+            }, 1000);
+        })
+    </script>
   </body>
 </html>
