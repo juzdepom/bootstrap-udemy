@@ -8,15 +8,28 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
     <title>Bootstrap Udemy</title>
     <style>
+
+      .jumbotron {
+        background-color: rgba(240,240,240,0.8);
+      }
       /*this is what will allow the parallax effect*/
       .section {
-        min-height: 1000px;
+        min-height: 700px;
         overflow: hidden;
         position: relative;
         padding:80px 10px 0px;
+        background-size: cover;
       }
       .section:nth-child(even){
-        background-color:#ccc;
+        background: url(http://eskipaper.com/images/dark-enchanted-forest-1.jpg) no-repeat center center fixed;
+      }
+      #home {
+        background: url(https://i.pinimg.com/originals/ea/f3/aa/eaf3aabfccebfb5f4599e33ca439b959.jpg) no-repeat center center fixed;
+      }
+      #home .container {
+        color: white;
+        background-color: rgba(240,240,240,0.3);
+        padding: 30px;
       }
     </style>
   </head>
@@ -46,11 +59,26 @@
       <div class="container">
         <div class="jumbotron">
           <h1>Bootstrap 4 Products</h1>
-          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,</p>
+          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis.</p>
           <p><a href="#about" class="btn btn-primary">Learn more about us!</a></p>
         </div>
       </div>
     </header>
+
+    <section class="section" id="home">
+      <div class="container rounded">
+        <div class="row">
+          <div class="col" >
+            <h2>Welcome To Our Website</h2>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,</p>
+          </div>
+          <div class="col">
+            <img class="rounded img-fluid"
+                src="http://cdn.playbuzz.com/cdn/0af388b4-f2d2-4ef5-81e3-7d6cc8c4a0a9/61da4161-7467-48ff-8090-6fc9657ae4c1_560_420.jpg"/>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
