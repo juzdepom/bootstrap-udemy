@@ -7,11 +7,24 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
     <title>Bootstrap Udemy</title>
+    <style>
+      /*this is what will allow the parallax effect*/
+      .section {
+        min-height: 1000px;
+        overflow: hidden;
+        position: relative;
+        padding:80px 10px 0px;
+      }
+      .section:nth-child(even){
+        background-color:#ccc;
+      }
+    </style>
   </head>
 
   <body>
     <!-- navbar-expand-sm show Home, About, Products, Contact in a row or a column depending on screen size -->
-    <nav class="navbar navbar-dark bg-dark navbar-expand-sm">
+    <!-- sticky-top lets nav stay at top even if you scroll down -->
+    <nav class="navbar navbar-dark bg-dark navbar-expand-sm sticky-top">
       <div class="container">
         <!-- navbar-toggler show/hides button depending on screen size -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#topnav">
@@ -28,6 +41,16 @@
         </div>
       </div>
     </nav>
+
+    <header class="section">
+      <div class="container">
+        <div class="jumbotron">
+          <h1>Bootstrap 4 Products</h1>
+          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,</p>
+          <p><a href="#about" class="btn btn-primary">Learn more about us!</a></p>
+        </div>
+      </div>
+    </header>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
